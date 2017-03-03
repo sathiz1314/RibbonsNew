@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up_second_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg_img"
+    tools:context="com.ribbons.activities.SignUpSecondPage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/common_margin_twentyfour"
+        android:layout_marginRight="@dimen/common_margin_twentyfour"
+        android:orientation="vertical">
+
+        <com.ribbons.helper.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scroll"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="Ribbons"
+            android:textColor="@color/colorWhite"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/textInputLayout_FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_twenty"
+            android:text="@string/frst_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_FirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            app:theme="@style/EditLabel" />
+
+
+        <TextView
+            android:id="@+id/textInputLayout_LastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_LastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            app:theme="@style/EditLabel" />
+
+
+        <TextView
+            android:id="@+id/textInputLayout_Dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dob"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_Dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:background="@drawable/edittext_bg"
+            android:hint="@string/select"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite" />
+
+
+        <RadioGroup
+
+            android:id="@+id/rg_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/gender"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_normal"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb_Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male"
+                android:textColor="@color/colorWhite" />
+
+            <RadioButton
+                android:id="@+id/rb_Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:textColor="@color/colorWhite" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textInputLayout_Phone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_twenty"
+            android:text="@string/ph_number"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            app:theme="@style/EditLabel" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:text="@string/ribbon_pin"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_Pin1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorGlobal" />
+
+            <TextView
+                android:id="@+id/tv_Pin2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal"
+                tools:ignore="DuplicateIds" />
+
+            <TextView
+                android:id="@+id/tv_Pin3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal" />
+
+            <TextView
+                android:id="@+id/tv_Pin4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal" />
+
+            <TextView
+                android:id="@+id/tv_Pin5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal" />
+
+            <TextView
+                android:id="@+id/tv_Pin6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal" />
+
+            <TextView
+                android:id="@+id/tv_Pin7"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal" />
+
+            <TextView
+                android:id="@+id/tv_Pin8"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/textviewsinlebox"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorGlobal" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textInputLayout_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:text="@string/location"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_Location"
+            style="@style/mySpinnerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:background="@drawable/edittext_bg"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_forgotpassword"
+            android:background="@drawable/button_bg_global"
+            android:onClick="next"
+            android:text="@string/next"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+</ScrollView>

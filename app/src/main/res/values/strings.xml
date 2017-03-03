@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Ribbons</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">316730028725192</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">User name</string>
+    <string name="password">Password</string>
+    <string name="forgot_pass">Forgot Your Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_acc">Create Account</string>
+    <string name="enter_mail">Email id</string>
+    <string name="re_password">Re - enter password</string>
+    <string name="next">Next</string>
+    <string name="frst_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="dob">Date of birth</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="ph_number">Phone number</string>
+    <string name="ribbon_pin">Ribbon pin</string>
+    <string name="location">Location</string>
+    <string name="verify_code">Verification Code</string>
+    <string name="type_verify_code">Please type the verification code sent to +963852147</string>
+    <string name="select">Select</string>
+    <string name="menu_search">Menu</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_navigation">Navigation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="menu_myribbons">My Ribbons</string>
+    <string name="menu_ribbons">Ribbons</string>
+    <string name="menu_notification">Notifications</string>
+    <string name="menu_brands">Brands</string>
+    <string name="menu_home">Home</string>
+    <string name="send_feedback">Send Feedback</string>
+    <string name="send_voucher">Send Voucher</string>
+    <string name="last_list">Last Visit</string>
+    <string name="refer_app">Refer App</string>
+    <string name="about">About</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+
+</resources>

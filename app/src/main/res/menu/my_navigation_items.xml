@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_home"
+        android:title="@string/menu_home"
+        android:icon="@drawable/bottom_home" />
+
+    <item android:id="@+id/action_myribbons"
+        android:title="@string/menu_myribbons"
+        android:icon="@drawable/bottom_myribbon" />
+
+    <item android:id="@+id/action_ribbons"
+        android:title="@string/menu_ribbons"
+        android:icon="@drawable/bottom_myribbon" />
+
+    <item android:id="@+id/action_notification"
+        android:title="@string/menu_notification"
+        android:icon="@drawable/bottom_notification" />
+
+    <item android:id="@+id/action_brands"
+        android:title="@string/menu_brands"
+        android:icon="@drawable/bottom_brands" />
+</menu>

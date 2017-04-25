@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_margin_ten"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:scaleType="fitXY"
+                android:src="@drawable/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/imagaeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_marginLeft="@dimen/common_margin_twentyfour"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tvPrice"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_above="@+id/tvViewOffer"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_margin_ten"
+                android:background="@drawable/prizetag"
+                android:elevation="16dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorYellow"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

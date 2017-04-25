@@ -14,7 +14,7 @@
         android:layout_above="@+id/linear"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/common_margin_twenty"
-        android:text="Ribbons"
+        android:text="ribbons"
         android:textColor="@color/colorWhite"
         android:textSize="50sp" />
 
@@ -43,7 +43,7 @@
             android:textStyle="bold" />
 
         <android.support.v7.widget.AppCompatEditText
-            android:text="@string/password"
+            android:text="Rajkumar@gmail.com"
             android:id="@+id/ed_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             android:textStyle="bold" />
 
         <android.support.v7.widget.AppCompatEditText
-            android:text="@string/password"
+            android:text="123456"
             android:id="@+id/ed_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,7 +103,7 @@
             android:textStyle="bold" />
 
         <android.support.v7.widget.AppCompatEditText
-            android:text="@string/password"
+            android:text="123456"
             android:id="@+id/ed_RePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

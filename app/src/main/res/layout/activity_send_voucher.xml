@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_verification_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGlobal"
+    tools:context="com.ribbons.activities.VerificationCodeActivity">
+
+    <RelativeLayout
+        android:background="@color/colorGlobal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/common_margin_twenty"
+        android:text="@string/enter_ribbon_pin"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_larger"
+        android:textStyle="bold" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/common_margin_ten"
+            android:layout_marginRight="@dimen/common_margin_ten"
+            android:id="@+id/linear"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code6"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code7"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_weight="1"
+                android:id="@+id/ed_code8"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_bg_rectangle"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+
+    <Button
+        android:layout_marginTop="@dimen/common_margin_twentyfour"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear"
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        android:id="@+id/bt_SendVoucher"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_box"
+        android:text="@string/mdtp_ok"
+        android:textColor="@color/colorGlobal" />
+
+
+
+</RelativeLayout>

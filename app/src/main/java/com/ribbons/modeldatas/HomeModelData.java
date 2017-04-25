@@ -6,12 +6,22 @@ package com.ribbons.modeldatas;
 
 public class HomeModelData {
     private int image;
+    private String price;
+    private String title;
 
     public HomeModelData() {
     }
+
     public HomeModelData(int image) {
         this.image = image;
     }
+
+    public HomeModelData(int image, String price, String title) {
+        this.image = image;
+        this.price = price;
+        this.title = title;
+    }
+
     public int getImage() {
         return image;
     }
@@ -20,5 +30,19 @@ public class HomeModelData {
         this.image = image;
     }
 
+    public String getPrice() {
+        return price;
+    }
 
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }

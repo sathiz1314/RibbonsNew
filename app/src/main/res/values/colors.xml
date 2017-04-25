@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimary">#F55F60</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
@@ -13,6 +13,18 @@
     <color name="maintenance_bg">#3f4b51</color>
     <color name="text_hint_color">#FFF</color>
     <color name="home_menuColor">#F45E5F</color>
+    <color name="colorYellow">#FFC107</color>
+    <color name="colorGrey">#e0e0e0</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorGrayDrak">#424242</color>
+    <color name="colorSwitchInactive">#6D6A6A</color>
+    <color name="colorSwitch">#BDBDBD</color>
+    <color name="colorWhiteTransparency">#10000000</color>
+    <color name="colorWhitePrimaryDark">#F5F5F5</color>
+    <color name="colorBottomDull">#F3787A</color>
+    <color name="colorTransBlack">#80000000</color>
+
 
 
 </resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/common_margin_ten"
+        android:layout_marginRight="@dimen/common_margin_ten">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/Cafe"
+            android:textColor="@color/basic_black"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_Cancel"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/common_margin_twenty"
+            android:src="@drawable/ribbon_cancel_black"
+            android:text="@string/about" />
+
+        <ImageView
+            android:id="@+id/iv_header"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="@dimen/common_margin_twenty"
+            android:scaleType="fitXY"
+            android:src="@drawable/coff"
+            android:text="@string/about" />
+
+
+        <TextView
+            android:id="@+id/tv_Points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_header"
+            android:layout_marginLeft="@dimen/common_margin_twenty"
+            android:layout_marginStart="@dimen/common_margin_twenty"
+            android:layout_toEndOf="@+id/iv_header"
+            android:layout_toRightOf="@+id/iv_header"
+            android:text="100 Points"
+            android:textColor="@color/colorYellow"
+            android:textSize="@dimen/font_large"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tv_PointsDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_Points"
+            android:layout_marginLeft="@dimen/common_margin_twenty"
+            android:layout_marginStart="@dimen/common_margin_twenty"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:layout_toEndOf="@+id/iv_header"
+            android:layout_toRightOf="@+id/iv_header"
+            android:text="@string/vaild_voucher"
+            android:textColor="@color/basic_black"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:layout_marginBottom="@dimen/common_margin_ten"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:textColor="@color/home_menuColor"
+            android:layout_below="@+id/iv_header"
+            android:text="@string/dont_sufficient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</RelativeLayout>

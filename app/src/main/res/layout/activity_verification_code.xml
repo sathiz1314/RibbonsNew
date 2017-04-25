@@ -11,72 +11,102 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
     </android.support.v7.widget.Toolbar>
 
     <TextView
-        android:textSize="@dimen/font_larger"
-        android:layout_marginBottom="@dimen/common_margin_twenty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_above="@+id/tv_verifyText"
         android:layout_centerInParent="true"
-        android:textStyle="bold"
-        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="@dimen/common_margin_twenty"
         android:text="@string/verify_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_larger"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/tv_verifyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linear"
+        android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/common_margin_twenty"
         android:layout_marginLeft="@dimen/common_margin_twenty"
         android:layout_marginRight="@dimen/common_margin_twenty"
-        android:id="@+id/tv_verifyText"
-        android:layout_above="@+id/linear"
-        android:layout_centerInParent="true"
-        android:textAppearance="?android:textAppearanceMedium"
-        android:textColor="@color/colorWhite"
+        android:gravity="center"
         android:text="@string/type_verify_code"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorWhite" />
 
     <LinearLayout
         android:id="@+id/linear"
-        android:orientation="vertical"
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
 
         <LinearLayout
 
-           android:gravity="center"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <android.support.v7.widget.AppCompatEditText
-                android:gravity="center"
+                android:id="@+id/ed_code1"
                 android:layout_width="50dp"
                 android:layout_height="60dp"
-                android:background="@drawable/edittext_box" />
+                android:background="@drawable/edittext_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
 
             <android.support.v7.widget.AppCompatEditText
-                android:gravity="center"
+                android:id="@+id/ed_code2"
                 android:layout_width="50dp"
                 android:layout_height="60dp"
-                android:background="@drawable/edittext_box" />
+                android:background="@drawable/edittext_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
 
             <android.support.v7.widget.AppCompatEditText
-                android:gravity="center"
+                android:id="@+id/ed_code3"
                 android:layout_width="50dp"
                 android:layout_height="60dp"
-                android:background="@drawable/edittext_box" />
+                android:background="@drawable/edittext_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
 
             <android.support.v7.widget.AppCompatEditText
-                android:gravity="center"
+                android:id="@+id/ed_code4"
                 android:layout_width="50dp"
                 android:layout_height="60dp"
-                android:background="@drawable/edittext_box" />
+                android:background="@drawable/edittext_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:textSize="@dimen/font_large"
+        android:textStyle="bold"
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#0B0B0B"
+        android:text="@string/next"
+        android:textColor="@color/colorWhite" />
 
 </RelativeLayout>

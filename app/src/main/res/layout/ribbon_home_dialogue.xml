@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_ribbonDialogueClose"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ribbon_close" />
+
+        <TextView
+            android:id="@+id/tvRbPin"
+            android:textAllCaps="true"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ribbon_dialogue_image"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/home_menuColor"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

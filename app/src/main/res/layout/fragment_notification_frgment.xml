@@ -4,10 +4,34 @@
     android:layout_height="match_parent"
     tools:context="com.ribbons.fragments.NotificationFrgment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ImageView
+          android:layout_centerHorizontal="true"
+          android:layout_above="@+id/texts"
+          android:id="@+id/ivNotify"
+          android:src="@drawable/no_notfication"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+      <com.ribbons.helper.CanaroTextView
+          android:textSize="@dimen/font_large"
+          android:id="@+id/texts"
+          android:layout_centerInParent="true"
+          android:text="@string/no_notify"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/recyclerViewNotification"
+       android:layout_marginLeft="@dimen/common_margin_ten"
+       android:layout_marginRight="@dimen/common_margin_ten"
+       android:layout_marginTop="@dimen/common_margin_ten"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+   </android.support.v7.widget.RecyclerView>
 
 </FrameLayout>

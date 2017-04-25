@@ -2,41 +2,45 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item
+        <!--<item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/home" />
+            android:icon="@drawable/home"
+            android:title="@string/home" />-->
         <item
             android:id="@+id/nav_send_feedback"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/feeback"
             android:title="@string/send_feedback" />
         <item
             android:id="@+id/nav_send_voucher"
-            android:icon="@drawable/ic_home"
+            android:icon="@drawable/voucher"
             android:title="@string/send_voucher" />
         <item
             android:id="@+id/nav_last_list"
-            android:icon="@drawable/nav_last_visit"
+            android:icon="@drawable/last_visits"
             android:title="@string/last_list" />
 
         <item
             android:id="@+id/nav_refer_app"
-            android:icon="@drawable/nav_send_voucher"
+            android:icon="@drawable/refer"
             android:title="@string/refer_app" />
         <item
             android:id="@+id/nav_settings"
-            android:icon="@drawable/nav_settings"
+            android:icon="@drawable/settings"
             android:title="@string/action_settings" />
 
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/nav_about"
+            android:icon="@drawable/about"
             android:title="@string/about" />
 
         <item
             android:id="@+id/nav_terms_conditions"
-            android:icon="@drawable/ic_insert_comment_black_24dp"
+            android:icon="@drawable/terms"
             android:title="@string/terms_conditions" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
     </group>
 
 

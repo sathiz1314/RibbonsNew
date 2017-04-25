@@ -5,19 +5,37 @@
     android:id="@+id/activity_sign_in"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_img"
+    android:background="@color/colorWhite"
     tools:context="com.ribbons.activities.SignIn">
 
 
     <com.ribbons.helper.CanaroTextView
+        android:visibility="gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/linear"
         android:layout_centerInParent="true"
         android:layout_marginBottom="@dimen/common_margin_twenty"
-        android:text="Ribbons"
+        android:text="ribbons"
         android:textColor="@color/colorWhite"
         android:textSize="50sp" />
+
+    <ImageView
+        android:src="@drawable/ribbon_text"
+        android:layout_above="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhiteTransparency"
+        android:visibility="gone"
+        app:indicatorName="BallClipRotatePulseIndicator" />
 
     <LinearLayout
         android:id="@+id/linear"
@@ -26,7 +44,6 @@
         android:layout_centerInParent="true"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/common_margin_twenty"
         android:orientation="vertical">
 
         <TextView
@@ -36,15 +53,14 @@
             android:layout_centerInParent="true"
             android:layout_marginLeft="@dimen/common_margin_twentyfour"
             android:layout_marginRight="@dimen/common_margin_twentyfour"
-            android:layout_marginTop="@dimen/common_margin_twenty"
+            android:layout_marginTop="?actionBarSize"
             android:text="@string/name"
             android:textAllCaps="true"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorGlobal"
             android:textSize="@dimen/font_normal"
             android:textStyle="bold" />
 
         <android.support.v7.widget.AppCompatEditText
-
             android:id="@+id/ed_UserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,10 +69,11 @@
             android:inputType="textEmailAddress"
             android:maxLines="1"
             android:singleLine="true"
+            android:text="sathishkumar@gmail.com"
             android:textAllCaps="true"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorWhite" />
+            android:textColor="@color/colorGlobal"
+            android:textColorHint="@color/colorGlobal" />
 
 
         <TextView
@@ -69,7 +86,7 @@
             android:layout_marginTop="@dimen/common_margin_ten"
             android:text="@string/password"
             android:textAllCaps="true"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorGlobal"
             android:textSize="@dimen/font_normal"
             android:textStyle="bold" />
 
@@ -82,10 +99,11 @@
             android:inputType="textPassword"
             android:maxLines="1"
             android:singleLine="true"
+            android:text="123456"
             android:textAllCaps="true"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@color/colorWhite"
-            android:textColorHint="@color/colorWhite" />
+            android:textColor="@color/colorGlobal"
+            android:textColorHint="@color/colorGlobal" />
 
 
         <TextView
@@ -98,7 +116,7 @@
             android:layout_marginTop="@dimen/common_margin_ten"
             android:background="@drawable/edittext_bg"
             android:text="@string/forgot_pass"
-            android:textColor="@color/colorWhite"
+            android:textColor="@color/colorGlobal"
             android:textSize="@dimen/font_small" />
 
         <Button
@@ -108,7 +126,8 @@
             android:layout_marginLeft="@dimen/common_margin_twentyfour"
             android:layout_marginRight="@dimen/common_margin_twentyfour"
             android:layout_marginTop="@dimen/common_margin_twenty"
-            android:background="@drawable/button_bg_global"
+            android:background="@drawable/button_bg_globalred"
+            android:elevation="8dp"
             android:onClick="signIn"
             android:text="@string/sign_in"
             android:textColor="@color/colorWhite" />
@@ -116,10 +135,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_margin_twenty"
+            android:layout_marginLeft="@dimen/common_margin_twentyfour"
+            android:layout_marginRight="@dimen/common_margin_twentyfour"
+            android:layout_marginTop="@dimen/common_margin_twentyfour"
             android:orientation="horizontal">
 
-            <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+            <!--<com.facebook.login.widget.LoginButton
+                xmlns:facebook="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/fb_Login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -130,31 +152,46 @@
                 android:paddingTop="@dimen/common_margin_ten"
                 android:textSize="@dimen/font_small"
                 android:visibility="gone"
-                facebook:com_facebook_login_text="Login With Facebook" />
+                facebook:com_facebook_login_text="Login With Facebook" />-->
 
             <Button
                 android:id="@+id/fb_CustomButton"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="56dp"
                 android:layout_weight="1"
                 android:background="@drawable/fb_login"
                 android:gravity="center"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_margin_ten"
+                android:layout_marginRight="@dimen/common_margin_ten"
+                android:text="@string/or"
                 android:textColor="@color/colorWhite"
-                android:textSize="@dimen/font_small" />
+                android:textSize="@dimen/font_large" />
 
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:padding="0.5dp"
+                android:visibility="gone">
 
             </com.google.android.gms.common.SignInButton>
 
-
+            <Button
+                android:id="@+id/button_Google"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:background="@drawable/gplus_log"
+                android:visibility="visible" />
         </LinearLayout>
-
-
     </LinearLayout>
 
     <TextView
@@ -165,5 +202,5 @@
         android:layout_centerInParent="true"
         android:background="@drawable/edittext_bg"
         android:text="@string/create_acc"
-        android:textColor="@color/colorWhite" />
+        android:textColor="@color/colorGlobal" />
 </RelativeLayout>

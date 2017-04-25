@@ -4,11 +4,11 @@
 
     <item android:id="@+id/action_home"
         android:title="@string/menu_home"
-        android:icon="@drawable/bottom_home" />
+        android:icon="@drawable/ic_home_bottom" />
 
     <item android:id="@+id/action_myribbons"
         android:title="@string/menu_myribbons"
-        android:icon="@drawable/bottom_myribbon" />
+        android:icon="@drawable/ic_bottom_myribbon" />
 
     <item android:id="@+id/action_ribbons"
         android:title="@string/menu_ribbons"

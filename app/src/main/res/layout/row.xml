@@ -1,23 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <android.support.v7.widget.CardView
-
-        app:cardCornerRadius="8dp"
-        app:cardElevation="0dp"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
 
+        <RelativeLayout
 
-        <ImageView
-            android:id="@+id/imagaeView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY" />
+            android:layout_height="120dp">
+
+            <View
+                android:id="@+id/viewsImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imagaeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:opacity="translucent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:elevation="@dimen/common_margin_ten"
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/common_margin_twentyfour"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_above="@+id/tvViewOffer"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/common_margin_ten"
+                android:background="@drawable/prizetag"
+                android:elevation="16dp"
+                android:gravity="center"
+                android:text="$ 50"
+                android:textColor="@color/colorYellow"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+            <TextView
+                android:elevation="@dimen/common_margin_ten"
+                android:id="@+id/tvViewOffer"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="View Offer"
+                android:textColor="@color/colorGlobal"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
 
     </android.support.v7.widget.CardView>
 </LinearLayout>

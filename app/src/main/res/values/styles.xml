@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -8,11 +8,85 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlNormal">@color/colorWhite</item>
         <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="searchViewStyle">@style/SearchViewStyleMyApp</item>
+
+
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Custom Base application theme. -->
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/home_menuColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+
+    </style>
+
+    <!-- Custom Base application theme. -->
+    <style name="MyAppThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+
+    </style>
+
+    <!-- Custom Base application theme. -->
+    <style name="MyAppThemeRed" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorGlobal</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorGlobal</item>
+        <item name="colorControlActivated">@color/colorGlobal</item>
+
+    </style>
+
+    <style name="MyAppThemeSearch" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/home_menuColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/basic_black</item>
+        <item name="colorControlActivated">@color/basic_black</item>
+
+    </style>
+
+
+
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+        <item name="android:textColor">@color/basic_black</item>
+        <item name="android:textColorHint">@color/basic_black</item>
+
+
+    </style>
+
+    <style name="SearchViewStyleMyApp" parent="Widget.AppCompat.SearchView">
+
+        <item name="queryBackground">@color/colorWhite</item>
+        <item name="searchHintIcon">@drawable/search_ic</item>
+        <item name="closeIcon">@drawable/close</item>
+
+
+    </style>
+
+    <style name="MyAppThemeEditText" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/home_menuColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/basic_black</item>
+        <item name="colorControlActivated">@color/colorGrayDrak</item>
+
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -33,14 +107,18 @@
     <style name="EditLabel" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/colorWhite</item>
         <item name="colorAccent">@color/colorWhite</item>
-        <item name="colorControlNormal">@color/colorWhite</item>
-        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/home_menuColor</item>
+        <item name="colorControlActivated">@color/home_menuColor</item>
     </style>
 
+    <style name="MyTextAppearance" parent="TextAppearance.AppCompat">
+
+        <item name="android:textSize" > @dimen/font_normal</item>
+    </style>
 
     <style name="DialogTheme">
-        <item name="android:windowEnterAnimation">@anim/grow_in</item>
-        <item name="android:windowExitAnimation">@anim/push_out_right</item>
+        <item name="android:windowEnterAnimation">@anim/zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/grow_out</item>
     </style>
 
     <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
@@ -53,4 +131,44 @@
         <item name="android:layout_marginLeft">5dp</item>
 
     </style>
+
+    <style name="mySearchResult" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/ic_action_searchlitered</item>
+        <item name="searchHintIcon">@drawable/ic_action_searchlitered</item>
+        <item name="android:textColor"> @color/colorGlobal</item>
+        <item name="queryBackground">@color/colorWhite</item>
+        <item name="queryHint">@string/searchlocation_brand</item>
+        <item name="closeIcon">@drawable/cancel</item>
+    </style>
+
+    <style name="AlertDialogTheme"
+        parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorGrey</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/home_menuColor</item>
+        <item name="android:windowTitleStyle">@style/WindowTitleStyle</item>
+
+    </style>
+
+    <style name="WindowTitleStyle"
+        parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@color/home_menuColor</item>
+    </style>
+
+    <style name="TranslucentDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:colorBackground">#00000000</item>
+    </style>
+
+    <style name="CollapsedAppBarTopic" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/home_menuColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MySwitch">
+        <item name="android:colorForeground">@color/colorSwitchInactive</item>
+        <item name="colorSwitchThumbNormal">@color/colorSwitch</item>
+        <item name="colorControlActivated">@color/home_menuColor</item>
+    </style>
+
 </resources>

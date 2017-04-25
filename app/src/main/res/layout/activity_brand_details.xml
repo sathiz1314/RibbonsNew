@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_submit_view_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeBrandDetails"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ribbons.helper.CanaroTextView
+            android:textStyle="bold"
+            android:textSize="@dimen/font_normal"
+            android:id="@+id/texts"
+            android:text="@string/oops"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/texts"
+            android:src="@drawable/error_ribbon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_margin_ten"
+                android:elevation="5dp"
+                android:src="@drawable/ic_action_back" />
+
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="@dimen/common_margin_ten"
+                android:layout_marginTop="@dimen/common_margin_ten"
+                android:layout_toRightOf="@+id/ivBack"
+                android:elevation="@dimen/common_margin_ten"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivBacks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivBack"
+                android:layout_marginTop="@dimen/common_margin_ten"
+                android:elevation="5dp"
+                android:src="@drawable/ic_action_back"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvTitleDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTitle"
+                android:layout_marginLeft="@dimen/common_margin_ten"
+                android:layout_toRightOf="@+id/ivBacks"
+                android:elevation="@dimen/common_margin_ten"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_larger"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/iv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewBrandDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/header"
+                android:layout_marginLeft="@dimen/common_margin_ten"
+                android:layout_marginRight="@dimen/common_margin_ten"
+                android:layout_marginTop="@dimen/common_margin_ten"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

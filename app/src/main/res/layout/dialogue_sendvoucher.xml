@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/common_margin_ten"
+        android:layout_marginRight="@dimen/common_margin_ten">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/are_you_sure"
+            android:textColor="@color/basic_black"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:gravity="center"
+            android:text="@string/voucher_to"
+            android:textColor="@color/basic_black"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_marginLeft="@dimen/common_margin_ten"
+            android:layout_toRightOf="@+id/txt2"
+            android:gravity="center"
+            android:text="@string/prakash"
+            android:textColor="@color/colorGlobal"
+            android:textSize="@dimen/font_large" />
+
+        <TextView
+            android:layout_marginLeft="@dimen/common_margin_five"
+            android:textStyle="bold"
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_toRightOf="@+id/txt3"
+            android:gravity="center"
+            android:text="@string/q_mark"
+            android:textColor="@color/basic_black"
+            android:textSize="@dimen/font_large" />
+
+
+        <TextView
+            android:textSize="@dimen/font_large"
+            android:id="@+id/tv_conform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt2"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/common_margin_twenty"
+            android:text="@string/confirm"
+            android:textColor="@color/basic_black"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_conform"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/common_margin_ten"
+            android:layout_marginTop="@dimen/common_margin_twenty">
+
+            <Button
+                android:id="@+id/bt_Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/common_margin_ten"
+                android:background="@drawable/button_bg_globalred"
+                android:text="@string/yes"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_No"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_conform"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/common_margin_ten"
+                android:layout_toRightOf="@+id/bt_Yes"
+                android:background="@drawable/button_bg_no"
+                android:text="@string/no"
+                android:textColor="@color/home_menuColor"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

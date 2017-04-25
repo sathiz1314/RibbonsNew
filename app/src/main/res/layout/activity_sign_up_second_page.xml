@@ -25,7 +25,7 @@
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:layout_marginTop="150dp"
-            android:text="Ribbons"
+            android:text="ribbons"
             android:textColor="@color/colorWhite"
             android:textSize="50sp" />
 
@@ -180,79 +180,116 @@
 
             <TextView
                 android:id="@+id/tv_Pin1"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorGlobal" />
+                android:textColor="@color/basic_black" />
 
             <TextView
                 android:id="@+id/tv_Pin2"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black"
                 tools:ignore="DuplicateIds" />
 
             <TextView
                 android:id="@+id/tv_Pin3"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black" />
 
             <TextView
                 android:id="@+id/tv_Pin4"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black" />
 
             <TextView
                 android:id="@+id/tv_Pin5"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black" />
 
             <TextView
                 android:id="@+id/tv_Pin6"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black" />
 
             <TextView
                 android:id="@+id/tv_Pin7"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black" />
 
             <TextView
                 android:id="@+id/tv_Pin8"
-                android:layout_width="35dp"
+                android:layout_width="0dp"
                 android:layout_height="35dp"
+                android:layout_weight="1"
                 android:background="@drawable/textviewsinlebox"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="@color/colorGlobal" />
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/basic_black" />
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:text="@string/refer_code"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/ed_ReferralCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            app:theme="@style/EditLabel" />
 
         <TextView
             android:id="@+id/textInputLayout_Location"
@@ -265,7 +302,18 @@
             android:textSize="@dimen/font_normal"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_ten"
+            android:background="@drawable/edittext_bg"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_normal" />
+
         <android.support.v7.widget.AppCompatSpinner
+            android:visibility="gone"
             android:id="@+id/spinner_Location"
             style="@style/mySpinnerItemStyle"
             android:layout_width="match_parent"
